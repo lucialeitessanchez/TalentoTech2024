@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/icon.png">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css"> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://kit.fontawesome.com/2cbbc87d30.js" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Talento tech 2024 - LLS</title>
+</head>
+<body>
+    <header>
+        <div class="contenedor">
+        <img src="img/icon.png" width="50" alt="logo"> <h1>MultiMax</h1> 
+        <form  method="GET" class="search-form">
+            <input type="search" placeholder="Buscar productos..." aria-label="Buscar productos">
+            <button type="submit"><i class="las la-search"></i></button>
+        </form>
+        </div>
+    </header>
+    <nav >
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="reseñas.html">Reseñas</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href=""><i class="fas fa-shopping-cart"></i></a></li>
+        </ul>
+    </nav>
+    <main>
+    
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://picsum.photos/1920/200?random=1" class="d-block w-100" alt="Imagen 1">
+            </div>
+            <div class="carousel-item">
+                <img src="https://picsum.photos/1920/200?random=2" class="d-block w-100" alt="Imagen 2">
+            </div>
+            <div class="carousel-item">
+                <img src="https://picsum.photos/1920/200?random=3" class="d-block w-100" alt="Imagen 3">
+            </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <section class="container">
+            <h2 class="mb-4">Reseñas de Productos</h2>
+            <table class="table table-bordered table-hover">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Producto</th>
+                        <th>Precio</th>
+                        <th>Calificación</th>
+                        <th>Fecha</th>
+                        <th>Revisor</th>
+                        <th>Correo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Velvet Touch
+                        <img src="https://cdn.dummyjson.com/products/images/beauty/Powder%20Canister/1.png" alt="Producto" width="50"></td>
+                        <td>$14.99</td>
+                        <td><div>
+                            <span class="las la-star"></span>
+                            <span class="las la-star"></span>
+                            <span class="las la-star"></span>
+                            <span class="las la-star"></span>
+                            <span class="las la-star"></span>
+                        </div>
+                        <p>Very happy with my purchase!</p>
+                    </td>
+                        <td>2024-05-23</td>
+                        <td>Ethan Thompson</td>
+                        <td>ethan.thompson@x.dummyjson.com</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Velvet Touch
+                            <img src="https://cdn.dummyjson.com/products/images/beauty/Powder%20Canister/1.png" alt="Producto" width="50"></td>
+                        <td>$14.99</td>
+                        <td><div>
+                            <span class="las la-star"></span>
+                            <span class="las la-star"></span>
+                            <span class="las la-star"></span>
+                            <span class="las la-star"></span>
+                        </div>
+                        <p>Great value for money!</p>
+                        </td>
+                        <td>2024-05-23</td>
+                        <td>Levi Hicks</td>
+                        <td>levi.hicks@x.dummyjson.com</td>
+                    </tr>
+
+                    <tr>
+                        <td>Velvet Touch
+                            <img src="https://cdn.dummyjson.com/products/images/beauty/Powder%20Canister/1.png" alt="Producto" width="50"></td>
+                        <td>$14.99</td>
+                        <td><div>
+                            <span class="las la-star"></span>
+                            <span class="las la-star"></span>
+                            <span class="las la-star"></span>
+                            <span class="las la-star"></span>
+                            <span class="las la-star"></span>
+                        </div>
+                        <p>Highly impressed!</p>
+                        </td>
+                        <td>2024-05-23</td>
+                        <td>Hazel Gardner</td>
+                        <td>hazel.gardner@x.dummyjson.com</td>
+                    </tr>
+
+                    <tr>
+                        <td>Red Lipstick
+                            <img src= "https://cdn.dummyjson.com/products/images/beauty/Red%20Lipstick/1.png" alt="Producto" width="50"></td>
+                        <td>$12.99</td>
+                        <td><div>
+                            <span class="las la-star"></span>
+                            <span class="las la-star"></span>
+                        </div>
+                        <p>The Red Lipstick is a classic and bold choice for adding a pop of color to your lips. With a creamy and pigmented formula, it provides a vibrant and long-lasting finish.</p>
+                        </td>
+                        <td>2024-05-23</td>
+                        <td>Leo Rivera</td>
+                        <td>eo.rivera@x.dummyjson.com</td>
+                    </tr>
+
+                    <tr>
+                        <td>Red Lipstick
+                            <img src= "https://cdn.dummyjson.com/products/images/beauty/Red%20Lipstick/1.png" alt="Producto" width="50"></td>
+                        <td>$12.99</td>
+                        <td><div>
+                            <span class="las la-star"></span>
+                            <span class="las la-star"></span>
+                            <span class="las la-star"></span>
+                            <span class="las la-star"></span>
+                        </div>
+                        <p>Very pleased!</p>
+                        </td>
+                        <td>2024-05-23</td>
+                        <td>Carter Rivera</td>
+                        <td>carter.rivera@x.dummyjson.com</td>
+                    </tr>
+
+                    <tr>
+                        <td>Gucci Bloom by Gucci 
+                            <br>
+                        <img src= "https://cdn.dummyjson.com/products/images/fragrances/Gucci%20Bloom%20Eau%20de/3.png" alt="Producto" width="50"></td>
+                        <td>$79.99</td>
+                        <td><div>
+                            <span class="las la-star"></span>
+                            <span class="las la-star"></span>
+                            <span class="las la-star"></span>
+                            <span class="las la-star"></span>
+                        </div>
+                        <p>Fast shipping!</p>
+                        </td>
+                        <td>2024-05-23</td>
+                        <td>Ava Harris</td>
+                        <td>ava.harris@x.dummyjson.com</td>
+                    </tr>
+                    <tr>
+                        <td>Gucci Bloom by Gucci 
+                            <br>
+                        <img src= "https://cdn.dummyjson.com/products/images/fragrances/Gucci%20Bloom%20Eau%20de/2.png" alt="Producto" width="50"></td>
+                        <td>$79.99</td>
+                        <td><div>
+                            <span class="las la-star"></span>
+                            <span class="las la-star"></span>
+                            <span class="las la-star"></span>
+                            <span class="las la-star"></span>
+                            <span class="las la-star"></span>
+                        </div>
+                        <p>Would buy again!</p>
+                        </td>
+                        <td>2024-05-23</td>
+                        <td>Madison Collins</td>
+                        <td>madison.collins@x.dummyjson.com/td>
+                    </tr>
+
+                    <tr>
+                        <td>Annibale Colombo Sofa
+                            <br>
+                        <img src= https://cdn.dummyjson.com/products/images/furniture/Annibale%20Colombo%20Bed/3.png alt="Producto" width="50"></td>
+                        <td>$2499.99</td>
+                        <td><div>
+                            <span class="las la-star"></span>
+                            <span class="las la-star"></span>
+                            <span class="las la-star"></span>
+                        </div>
+                        <p>Very satisfied!</p>
+                        </td>
+                        <td>2024-05-23</td>
+                        <td>Tyler Davis</td>
+                        <td>tyler.davis@x.dummyjson.com</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <i>Lucia Leites Sanchez | Talento Tech 2024 | Pre-Entrega</i>
+    </footer>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

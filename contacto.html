@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/icon.png">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css"> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://kit.fontawesome.com/2cbbc87d30.js" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Talento tech 2024 - LLS</title>
+</head>
+<body>
+    <header>
+        <div class="contenedor">
+        <img src="img/icon.png" width="50" alt="logo"> <h1>MultiMax</h1> 
+        <form  method="GET" class="search-form">
+            <input type="search" placeholder="Buscar productos..." aria-label="Buscar productos">
+            <button type="submit"><i class="las la-search"></i></button>
+        </form>
+        </div>
+    </header>
+    <nav >
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="reseñas.html">Reseñas</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href=""><i class="fas fa-shopping-cart"></i></a></li>
+        </ul>
+    </nav>
+    <main>
+    
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://picsum.photos/1920/200?random=1" class="d-block w-100" alt="Imagen 1">
+            </div>
+            <div class="carousel-item">
+                <img src="https://picsum.photos/1920/200?random=2" class="d-block w-100" alt="Imagen 2">
+            </div>
+            <div class="carousel-item">
+                <img src="https://picsum.photos/1920/200?random=3" class="d-block w-100" alt="Imagen 3">
+            </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        
+        <section id="contactoSection">
+            <h3>Contactanos</h3>
+            <p>Te ayudamos si tuviste algun problema con tu compra</p>
+
+            <div class="contact">
+                <div class="mb-3">
+                    <legend>Donde encontrarnos </legend>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.193984597558!2d-58.37856442337281!3d-34.624537858599666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb2db41cf24b%3A0x598a669d77b4fdb9!2sChacabuco%201301%2C%20C1150%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1sen!2sar!4v1731337691174!5m2!1sen!2sar" 
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <form action="https://formspree.io/f/xkgwdleb" method="POST">
+                <div class="mb-3"> 
+                    <fieldset>
+                        <legend>Mandanos tu consulta</legend>
+                        <!-- el for del label debe ser la misma que el id al que esta relacionado -->
+                    <label for="nombreI">Nombre:</label>
+                    <input type="text" id="nombreI" name="nombreI" placeholder="Ingrese solo nombre" required>
+                    <label for="apellidoI">Apellido:</label>
+                    <input type="text" id="apellidoI" name="apellidoI" placeholder="Ingrese apellido completo" required>
+                    <br>
+                    <br>
+                    <label for="correo">Correo electronico:</label>
+                    <input type="mail" id="correo" name="correo" placeholder="Ingrese su correo" required>
+                    <br><br>
+                    <label for="mensaje">Mensaje a enviar</label>
+                    <textarea name="mensaje" id="mensaje" rows="10" cols="40" required>Escriba su consulta o reclamo</textarea>
+                    <br><br>
+                    <button type="submit" class="btn btn-light">Enviar consulta</button>
+                </fieldset></div>
+                </form>    
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <i>Lucia Leites Sanchez | Talento Tech 2024 | Pre-Entrega</i>
+    </footer>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

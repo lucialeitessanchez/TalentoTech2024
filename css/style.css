@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    color: black;
+}
+
+
+header{
+    background-color: #F9DBBA;
+    padding: 20px;
+}
+
+body{
+    font-family: "Red Hat Display", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+footer{
+    background-color: #333;
+    color: white;
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+    
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+
+nav ul li a{
+    text-decoration: none; /* le saca el estilo del hipervinculo*/
+    color: black;
+}
+
+nav ul li a:hover {
+    background-color: whitesmoke;
+}
+
+nav{
+    grid-area: nav;
+    background-color:  #F9DBBA;
+    padding: 2px;
+}
+
+
+.contenedor {    /*  alinear hijos */
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+}
+
+.contenedor img {
+    margin-right: 10px; /* Separa la imagen y el título */
+}
+
+.contenedor h1 {
+    margin-right: auto; /* Empuja el h1 hacia la izquierda y el formulario a la derecha */
+}
+
+
+.search-form {
+    display: flex; /* Alinea el input y el botón en la misma línea */
+}
+
+.search-form input {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.search-form button {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+
+}
+
+.grid-container{
+    width: 1200px;
+    display: grid;
+     /* grid-template-columns: 100px 300px 400px 400px; como quiero que grid que arme la grilla */
+    /* grid-template-columns: repeat(4,auto); */
+    /* grid-template-columns: auto auto auto; */
+    /* grid-template-columns: 10% 20% 50% 30%; */
+    grid-gap:10px;
+    background-color: red;
+    height: 200px;
+}
+
+.item{
+    background-color: lightblue;
+    width: 100px;
+    height: 100px;
+    border: 1px dotted black;
+}
+
+#contactoSection{
+    padding-left: 30px;
+    padding-top: 15px;
+}
+
+.contact{
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+
+
+.container{
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    grid-auto-columns: 1fr;
+    grid-template-areas: 
+    "hearder"
+    "nav"
+    "main"
+    "footer";
+    height: 100vh;
+}
+
+
+/* tabla */
+table{
+    width: 70%;
+    margin: 20px auto;
+}
+table th,table td{
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+table th{
+    background-color:#1A4870 ;
+    color: white;
+}
+table td img{
+    width: 50px;
+    height: 50px;
+}
+
+table td button{
+    padding: 8px 12px;
+    background-color: #1A4870;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+table td button:hover{
+    background-color: lightblue;
+}
+
+#sectionProd {
+    padding: 8px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* 6 columnas iguales */
+    gap: 1rem; /* Espacio entre las cards */
+}
+
+.card {
+    background-color: #F9DBBA;
+    width: 100%; /* Asegura que las cards llenen la celda */
+}
+
+/* Para dispositivos móviles */
+@media (max-width: 768px) {
+    header {
+        padding: 15px;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #contactoSection {
+        padding-left: 10px;
+        padding-top: 5px;
+        
+    }
+
+    .contact {
+        flex-direction: column; /* Cambia a una sola columna */
+        align-items: center;
+      
+    }
+}
+
+.carritoSection {
+    flex-direction: column;  
+    justify-content: center;  
+    align-items: center; 
+    width: 60%;
+    padding-top: 20px;
+    padding-left: 15px;
+    padding-bottom: 50px;
+    margin: 0 auto; 
+}
