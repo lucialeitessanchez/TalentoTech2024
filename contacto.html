@@ -75,23 +75,26 @@
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.193984597558!2d-58.37856442337281!3d-34.624537858599666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb2db41cf24b%3A0x598a669d77b4fdb9!2sChacabuco%201301%2C%20C1150%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1sen!2sar!4v1731337691174!5m2!1sen!2sar" 
                 width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
-                <form action="https://formspree.io/f/xkgwdleb" method="POST">
-                <div class="mb-3"> 
+                <form class="formulario"  action="https://formspree.io/f/xkgwdleb" method="POST">
                     <fieldset>
                         <legend>Mandanos tu consulta</legend>
                         <!-- el for del label debe ser la misma que el id al que esta relacionado -->
+                    <div class="mb-3">     
                     <label for="nombreI">Nombre:</label>
                     <input type="text" id="nombreI" name="nombreI" placeholder="Ingrese solo nombre" required>
+                    </div>
+                    <div class="mb-3">   
                     <label for="apellidoI">Apellido:</label>
                     <input type="text" id="apellidoI" name="apellidoI" placeholder="Ingrese apellido completo" required>
-                    <br>
-                    <br>
+                    </div>   
+                    <div class="mb-3">   
                     <label for="correo">Correo electronico:</label>
                     <input type="mail" id="correo" name="correo" placeholder="Ingrese su correo" required>
-                    <br><br>
-                    <label for="mensaje">Mensaje a enviar</label>
-                    <textarea name="mensaje" id="mensaje" rows="10" cols="40" required>Escriba su consulta o reclamo</textarea>
-                    <br><br>
+                    </div>
+                    <div class="mb-3">   
+                    <label for="mensaje" class="form-label">Mensaje a enviar</label>
+                    <textarea class="form-control" name="mensaje" id="mensaje" rows="10" cols="40" required placeholder="Escriba su consulta o reclamo"></textarea>
+                    </div>
                     <button type="submit" class="btn btn-light">Enviar consulta</button>
                 </fieldset></div>
                 </form>    
