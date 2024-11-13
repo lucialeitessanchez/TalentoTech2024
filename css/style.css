@@ -4,6 +4,36 @@
     color: black;
 }
 
+#inicio {
+    position: relative;
+    height: 100vh; 
+    background-image: url("https://picsum.photos/200/300/?blur");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#inicio .overlay {
+    position: absolute;
+    padding-top: 40px;
+    top: 50px; 
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo negro con transparencia */
+    padding: 20px 40px; /*relleno de adentro*/
+    border-radius: 8px;
+    color: white;
+    text-align: center;
+}
+
+#inicio h2 {
+    margin: 0;
+    font-size: 1.5rem; 
+    font-family: 'Red Hat Display', sans-serif;
+}
+
 
 header{
     background-color: #F9DBBA;
@@ -18,7 +48,6 @@ body{
 
 footer{
     background-color: #333;
-    color: white;
     text-align: center;
     display: block;
     margin-top:50px;
