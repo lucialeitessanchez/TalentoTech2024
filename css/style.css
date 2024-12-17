@@ -189,7 +189,7 @@ table td button:hover{
 #sectionProd {
     padding: 8px;
     display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(300px,1fr)); /* tantas columnas como entren, se adapta minimo tiene que tenes espacio de 300 */
+    /* grid-template-columns: repeat(auto-fill,minmax(300px,1fr)); tantas columnas como entren, se adapta minimo tiene que tenes espacio de 300 */
     gap: 1rem; /* Espacio entre las cards */
 }
 
