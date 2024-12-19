@@ -14,7 +14,7 @@ fetch("https://dummyjson.com/products?limit=20")
     productos.forEach(product => {
       var cardDiv=document.createElement('div');
 
-      cardDiv.className='col-md-3';
+      cardDiv.className='col-md-3 d-flex';
       //agrega una card por cada json obtenido en la peticion
       cardDiv.innerHTML=`
       <div class="card mt-4">
