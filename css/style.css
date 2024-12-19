@@ -196,17 +196,13 @@ table td button:hover{
 .card {
     background-color: #F9DBBA;
     width: 100%; /* Asegura que las cards llenen la celda */
-    
 }
-.card-img-top {
-    height: 200px; /* Altura fija para imágenes */
-    object-fit: cover; /* Ajusta las imágenes al tamaño del contenedor */
-  }
-  .card-body {
+
+.card-body {
     display: flex;
     flex-direction: column;
     justify-content: space-between; /* Espacio uniforme entre elementos */
-  }
+}
 
 
 
