@@ -46,8 +46,10 @@ document.addEventListener("DOMContentLoaded", () => {
         total += subtotal;
     });
 
+    
     // Mostrar total general
-    totalGeneral.textContent = `US$${total}`;
+    totalGeneral.textContent = `US$${total.toFixed(2)}`;
+
 
 
     //boton limpiar carrito
