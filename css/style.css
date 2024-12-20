@@ -3,6 +3,25 @@
     box-sizing: border-box;
     color: black;
 }
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Asegúrate de que el contenido no colapse */
+    align-items: stretch;
+}
+body, html {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    background-color: #333;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    margin-top: auto; /* Esto asegura que el footer esté empujado hacia abajo */
+}
 
 #inicio {
     position: relative;
@@ -46,13 +65,7 @@ body{
     font-style: normal;
 }
 
-footer{
-    background-color: #333;
-    text-align: center;
-    display: block;
-    margin-top:50px;
-    
-}
+
 
 nav ul{
     list-style: none;
@@ -139,8 +152,7 @@ nav{
     justify-content: center;
 }
 
-
-
+/*
 .container{
     display: grid;
     grid-template-rows: auto auto 1fr auto;
@@ -151,7 +163,17 @@ nav{
     "main"
     "footer";
     height: 100vh;
+}*/
+
+.container {
+    width: 100%; /* Ocupa todo el ancho */
+    max-width: 1200px; /* Opcional: limita el ancho máximo */
+    margin: 0 auto; /* Centra el contenedor */
+    padding: 0 15px; /* Agrega espacio lateral */
+    box-sizing: border-box; /* Asegura que el padding no desborde */
 }
+
+
 
 
 /* tabla */
