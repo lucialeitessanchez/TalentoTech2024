@@ -16,11 +16,28 @@ body, html {
 }
 
 footer {
-    background-color: #333;
     text-align: center;
+    background-color: #333;
     color: white;
     padding: 10px;
-    margin-top: auto; /* Esto asegura que el footer esté empujado hacia abajo */
+    font-size: 0.9rem;
+}
+
+footer i {
+    display: block;
+    margin-bottom: 10px;
+}
+
+footer div a {
+    color: white;
+    margin: 0 10px;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer div a:hover {
+    color: #f9dbba; /* Cambia de color al pasar el mouse */
 }
 
 #inicio {
