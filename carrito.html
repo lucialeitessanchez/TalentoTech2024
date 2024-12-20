@@ -126,6 +126,56 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/carrito.js"></script>
-    
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const carritoTable = document.getElementById('carritoitems');
+            const totalGeneral = document.getElementById('total');
+            const finalizarCompraBtn = document.getElementById('finalizarCompra');
+
+            function actualizarTablaCarrito() {
+                carritoTable.innerHTML = "";
+                let total = 0;
+                const carritoItemsStorage = JSON.parse(localStorage.getItem('cart')) || [];
+                const groupedItems = carritoItemsStorage.reduce((acc, item) => {
+                    if (!acc[item.id]) acc[item.id] = { ...item, cantidad: 0 };
+                    acc[item.id].cantidad += 1;
+                    return acc;
+                }, {});
+                Object.values(groupedItems).forEach(item => {
+                    const row = document.createElement('tr');
+                    row.innerHTML = `
+                        <td>${item.title}</td>
+                        <td>US$${item.price}</td>
+                        <td>${item.cantidad}</td>
+                        <td>US$${item.price * item.cantidad}</td>
+                        <td><button class="btn btn-danger btn-sm" onclick="eliminarDelCarrito(${item.id})">Eliminar</button></td>
+                    `;
+                    carritoTable.appendChild(row);
+                    total += item.price * item.cantidad;
+                });
+                totalGeneral.textContent = `US$${total}`;
+                verificarCarrito();
+            }
+
+            function verificarCarrito() {
+                const carritoItemsStorage = JSON.parse(localStorage.getItem('cart')) || [];
+                finalizarCompraBtn.disabled = carritoItemsStorage.length === 0;
+            }
+
+            window.eliminarDelCarrito = function (productId) {
+                const cart = JSON.parse(localStorage.getItem('cart')) || [];
+                const updatedCart = cart.filter(item => item.id !== productId);
+                localStorage.setItem('cart', JSON.stringify(updatedCart));
+                actualizarTablaCarrito();
+            };
+
+            document.getElementById('limpiarCarrito').addEventListener('click', () => {
+                localStorage.removeItem('cart');
+                actualizarTablaCarrito();
+            });
+
+            actualizarTablaCarrito();
+        });
+    </script>
 </body>
 </html>

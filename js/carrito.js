@@ -100,7 +100,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
         //limpiar carrito
         localStorage.removeItem('cart');
-        
+        volverIndex();
     });
     
     function volverIndex(){

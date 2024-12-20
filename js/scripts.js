@@ -44,7 +44,13 @@ fetch("https://dummyjson.com/products?limit=20")
       let cart = JSON.parse(localStorage.getItem("cart")) || []; //si no encuentra el cart que me devuelva un element vacio
       cart.push(product);
       localStorage.setItem("cart", JSON.stringify(cart));
-      alert(`${product.title} ha sido agregado al carrito`);
+      Swal.fire({
+        title: '¡Producto agregado!',
+        text: `${product.title} ha sido agregado al carrito.`,
+        icon: 'success',
+        confirmButtonText: 'OK'
+    });
+      
     }
 
     //carga inicial productos
