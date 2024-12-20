@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     
-    // Mostrar total general
+    // Mostrar total general con dos digitos
     totalGeneral.textContent = `US$${total.toFixed(2)}`;
 
 
