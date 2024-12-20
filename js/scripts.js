@@ -21,8 +21,9 @@ fetch("https://dummyjson.com/products?limit=20")
       <img src="${product.thumbnail}" alt="${product.title}" class="card-img-top">
       <div class="card-body">
         <h5 class="card-title">${product.title}</h5>
+        <h6 class="card-subtitle mb-2 text-body-secondary">US$${product.price}</h6>
         <p class="card-text">${product.description}</p>
-        <button class="btn btn-primary">Agregar al carrito</button>
+        <button class="btn btn-outline-secondary">Agregar al carrito</button>
       </div>
       </div>
       `;
