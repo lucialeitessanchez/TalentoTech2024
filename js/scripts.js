@@ -45,35 +45,14 @@ fetch("https://dummyjson.com/products?limit=20")
       cart.push(product);
       localStorage.setItem("cart", JSON.stringify(cart));
       Swal.fire({
-        title: '¡Producto agregado!',
-        text: `${product.title} ha sido agregado al carrito.`,
-        icon: 'success',
-        confirmButtonText: 'OK'
+        title: `${product.title} ha sido agregado al carrito`,
+        text: "",
+        icon: "success",
+        
     });
-      
     }
 
     //carga inicial productos
     fetchProductos();
 
 });
-
-
-// for(var i=1; i<=18; i++) {
-//     var cardDiv=document.createElement('div');
-
-// cardDiv.className='col-md-3';
-
-// cardDiv.innerHTML=`
-// <div class="card mt-8">
-// <img src="https://picsum.photos/300/200?random=${i}" class="card-img-top" >
-// <div class="card-body">
-//   <h5 class="card-title">Card title: ${i}</h5>
-//   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-//   <a href="#" class="btn btn-primary">Go somewhere</a>
-// </div>
-// </div>
-// `;
-
-// cardContainer.appendChild(cardDiv); //va agrando hijos al contenedor de cards
-// }
