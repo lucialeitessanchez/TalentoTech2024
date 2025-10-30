@@ -3,10 +3,10 @@ document.addEventListener("DOMContentLoaded", ()=>{
 var cardContainer=document.getElementById('card');
 
 function fetchProductos(){
-fetch("http://localhost:8080/producto")
+fetch("https://dummyjson.com/products?limit=20")
 .then((response)=>response.json()) //me traigo todo lo que tiene esa api ( datos y encabezados)
 .then((data)=>{
-    var productos = data; //guardo todo lo que me devuelve el back
+      var productos = data.products; //guardo todo lo que me devuelve el json que se llame products
 
     //limpio el contenedor, lo dejo sin nada
     cardContainer.innerHTML = "";
